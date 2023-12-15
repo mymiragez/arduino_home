@@ -208,7 +208,7 @@ void loop() {
     delay(20);
   }
 
-  if (countTime > 600) {  //ระยะการใช้งาน
+  if (countTime > 1200) {  //ระยะการใช้งาน
 
     LINE.notify("Forget Switch");
     digitalWrite(buzzer, HIGH);
@@ -447,5 +447,5 @@ void alarm() {
   display.println("Detected");
   display.display();
   delay(tt);
-  countTime = countTime + 4;
+  countTime = countTime + 10;
 }
